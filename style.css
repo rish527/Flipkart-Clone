@@ -1,0 +1,437 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.container{
+    font-family: "Noto Sans", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(235, 235, 235);
+    overflow-x: hidden;
+}
+
+
+/* ===================NAV BAR====================== */
+.nav{
+    background: #fff;
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: center;
+    /* position:absolute; */
+    
+}
+.nav div{
+    margin: .5rem 1rem .2rem 1rem;
+}
+
+.nav .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(233, 239, 255);
+    height: 60%;
+    width: 40rem;
+    padding:.5rem 0.4rem ;
+    border-radius: 10px;
+    
+
+}
+.search span{
+    font-size: 1.7rem;
+    margin-left: 15px;
+    color: rgb(53, 55, 57);
+    font-weight: 10;
+}
+
+.search-bar{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding-left: .7rem;
+    font-size: 1.15rem;
+}
+
+.nav .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.nav .options div *{
+    margin: 0 .2rem;
+}
+.nav .options span{
+    font-size: 1.6rem;
+}
+.nav .options p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.options div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 1rem;
+}
+
+/* main{
+    position: relative;
+    top: 10rem;
+} */
+/* =====================Category================= */
+.category{
+    padding-top: .7rem;
+    background: #fff;
+    margin: 0.5rem 1.2rem;
+    margin-right: .5rem;
+    
+}
+.category .items{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0rem;
+    /* gap: 2rem; */
+}
+
+.category .items .item{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: .7rem;
+    padding: 0rem 1.7rem;
+    /* width: 8rem; */
+    /* background: yellow; */
+}
+.category .items .item img{
+    width: 4rem;
+    height: 3.5rem;
+}
+.category .items .item p{
+    font-size: .85rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+
+/* =============================Slide Show======================= */
+
+.slideshow {
+    position: relative;
+    margin: 1.5rem 1.2rem;
+    margin-bottom: 1rem;
+    height: 14rem;
+    display: flex;
+    align-items: center;
+    background: gold;
+    margin-right: .5rem;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 10px; */
+}
+
+.ctl-btn{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.prev, .next {
+    cursor: pointer;
+    position: relative;
+
+    /* margin-top: 5rem; */
+    padding: 16px;
+    color: rgb(159, 159, 159);
+    background: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s step-start;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+
+/* =================================Item table======================= */
+.item-table{
+    margin: 2rem 1.2rem;
+    background: #fff;
+    padding: 1rem 1rem;
+    margin-right: .5rem;
+}
+
+.item-table .head{
+    padding-bottom:1.5rem ;
+    display: flex;
+    justify-content: space-between;
+}
+.item-table .head h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.item-table .items{
+    display: flex;
+    overflow-x: hidden;
+    
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 5px;
+    padding: .3rem;
+    padding-bottom: .5rem;
+    width: 11rem;
+    height: 13.5rem;
+    justify-content: center;
+    align-items: center;
+    font-size: .85rem;
+    overflow: hidden;
+    margin: 0rem .8rem;
+}
+.box img{
+    width: 90%;
+    height: 70%;
+    padding: .5rem;
+    padding-bottom: 1rem;
+    
+}
+
+.item-table .items .i1{
+    margin-left: 0px;
+}
+.box .name{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.box .atract{
+    font-weight: 700;
+}
+.head button{
+    height: 1rem;
+    width: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    border-radius: 50%;
+    background: rgb(102, 102, 255);
+    color: #fff;
+    font-size: 1rem;
+    /* background: red; */
+}
+
+
+
+/* ===============Vericle Table==================== */
+.vertical-list{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.vertical-list .t1{
+    margin-left: 1.2rem;
+}
+.vertical-list .t4{
+    margin-left: 1.2rem;
+}
+.vertical-list .t7{
+    margin-left: 1.2rem;
+}
+.verticle-table{
+    margin: 2rem .5rem;
+    background: #fff;
+    padding: 1rem .5rem;
+    /* margin-right: .rem; */
+    max-width: 30%;
+}
+
+.verticle-table .head{
+    padding: 0 1rem;
+    padding-bottom:1.5rem ;
+    display: flex;
+    justify-content: space-between;
+}
+.verticle-table .head h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.verticle-table .items{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+.verticle-table .items .item{
+    margin-bottom: 1rem;
+    width: 11rem;
+    height: 14rem;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    
+}
+.verticle-table .items .item .name{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 1rem;
+    
+}
+.verticle-table .items .item .atract{
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: green;
+}
+
+
+
+/* =========================footer===================== */
+
+footer{
+    width: 100%;
+    background: rgb(31, 30, 30);
+    padding-bottom: 1rem;
+    
+}
+footer .top{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 40px 60px 0;
+    column-gap: 20px;
+    font-size: 12px;
+    color: #fff;
+    padding-top: 2.5;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid grey;
+}
+footer .top .name{
+    text-transform: uppercase;
+    padding-bottom: .8rem;
+    color: rgb(172, 169, 169);
+}
+footer .top li{
+    list-style: none;
+    color: #fff;
+    font-weight: 600;
+    padding: .1rem;
+}
+footer .top .social {
+    padding-left: 2.5rem;
+    border-left: 1px solid grey;
+}
+footer .top .social .name{
+    text-transform: capitalize;
+}
+footer .top .social{
+    display: flex;
+    flex-direction: column;
+}
+footer .top .social .add{
+    padding-bottom: .6rem ;
+}
+
+footer .top .social .down .name{
+    padding-bottom: .2rem;
+
+}
+
+footer .top .social .sites{
+    font-size: 1.2rem;
+}
+footer .top .social .sites i{
+    padding-right:.6rem;
+}
+.phone{
+    padding-top: .3rem;
+}
+
+footer .bottom{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 1rem; */
+    color: #fff;
+    font-size: .8rem;
+    padding: 2rem 10rem;
+}
+footer .bottom p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .7rem;
+}
+footer .bottom p span{
+    font-size: 1rem;
+    color: goldenrod;
+}
+
+footer .bottom .cpy{
+    gap: .1rem;
+}
+footer .bottom .cpy span{
+    color: #fff;
+}
+footer .bottom .cards{
+    display: flex;
+    gap: 0px;
+}
+footer .bottom .cards img{
+    height: 1rem;
+}

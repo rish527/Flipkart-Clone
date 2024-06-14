@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Rkart</title>
+    <link rel="icon" type="image/x-icon" href="./Assets/log.png">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <div class="logo">
+                <img src="./Assets/Logo.svg" alt="">
+            </div>
+            <div class="search">
+                <span class="material-symbols-outlined">search</span>
+                <input type="text" class="search-bar" placeholder="Search for Products, Brand, and More">
+            </div>
+            <div class="options">
+                <div class="login">
+                    <span class="material-symbols-outlined">account_circle</span>
+                    <p>Login</p>
+                </div>
+                <div class="cart">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                    <p>Cart</p>
+                </div>
+                <div class="seller">
+                    <span class="material-symbols-outlined">storefront</span>
+                    <p>Become a Seller</p>
+                </div>
+                <div class="more">
+                    <span class="material-symbols-outlined">more_vert</span>
+                </div>
+            </div>
+        </nav>
+
+
+        <main>
+            <div class="category">
+                <ul class="items">
+                    <li class="item gloc">
+                        <img src="./Assets/cat_glocery.webp" alt="">
+                        <p>Grocery</p>
+                    </li>
+                    <li class="item gloc">
+                        <img src="./Assets/cat_mobile.webp" alt="">
+                        <p>Mobile</p>
+                    </li>
+                    <li class="item gloc">
+                        <img src="./Assets/cat_fasion.webp" alt="">
+                        <p>Fashion</p>
+                    </li>
+                    <li class="item gloc">
+                        <img src="./Assets/cat_elect.jpg" alt="">
+                        <p>Electronics</p>
+                    </li>
+                    <li class="item gloc">
+                        <img src="./Assets/cat_furniture.jpg" alt="">
+                        <p>Home & Furniture</p>
+                    </li>
+                    <li class="item gloc">
+                        <img src="./Assets/cat_appl.webp" alt="">
+                        <p>Appliances</p>
+                    </li>
+                    <li class="item gloc">
+                        <img src="./Assets/cat_travel.webp" alt="">
+                        <p>Travel</p>
+                    </li>
+                    <li class="item gloc">
+                        <img src="./Assets/cat_toy.jpg" alt="">
+                        <p>Beauty & Toys</p>
+                    </li>
+                    <li class="item gloc">
+                        <img src="./Assets/cat_vehicle.jpg" alt="">
+                        <p>Two Wheelers</p>
+                    </li>
+                </ul>
+            </div>
+    
+    
+            <div class="slide-box">
+                <div class="slideshow">
+                    <div class="slide fade">
+                        <img src="./Assets/slide1.webp" alt="Image 1">
+                    </div>
+                    <div class="slide fade">
+                        <img src="./Assets/slide2.webp" alt="Image 2">
+                    </div>
+                    <div class="slide fade">
+                        <img src="./Assets/slide3.webp" alt="Image 3">
+                    </div>
+                    <div class="slide fade">
+                        <img src="./Assets/slide4.webp" alt="Image 3">
+                    </div>
+                    <div class="slide fade">
+                        <img src="./Assets/slide5.webp" alt="Image 3">
+                    </div>
+            
+                    <div class="ctl-btn">
+                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                    </div>
+                </div>
+        
+            </div>
+    
+            <div id="list1" class="item-table">
+                <div class="head">
+                    <h2>Best of Electronics</h2>
+                    <a href="#"><button class=".more-items">></button></a>
+                </div>
+        
+                <div class="items">
+                    <a href="#" >
+                        <div class="item box">
+                            <img src="./Assets/elec3.jpg" alt="">
+                            <p class="name" > Bluetooth Head Phones</p>
+                            <p class="atract">From 999</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item box">
+                            <img src="./Assets/elec1.jpg" alt="">
+                            <p class="name" > Bluetooth Head Phones</p>
+                            <p class="atract">From 999</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item box">
+                            <img src="./Assets/elec2.jpg" alt="">
+                            <p class="name" > Bluetooth Head Phones</p>
+                            <p class="atract">From 999</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item box">
+                            <img src="./Assets/elec4.jpg" alt="">
+                            <p class="name" > Bluetooth Head Phones</p>
+                            <p class="atract">From 999</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item box">
+                            <img src="./Assets/elec5.jpg" alt="">
+                            <p class="name" > Bluetooth Head Phones</p>
+                            <p class="atract">From 999</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item box">
+                            <img src="./Assets/elec6.jpg" alt="">
+                            <p class="name" > Bluetooth Head Phones</p>
+                            <p class="atract">From 999</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item box">
+                            <img src="./Assets/elec7.jpg" alt="">
+                            <p class="name" > Bluetooth Head Phones</p>
+                            <p class="atract">From 999</p>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+            <div id="list2" class="item-table">
+                <div class="head">
+                    <h2>Best of Electronics</h2>
+                    <a href="#"><button class=".more-items">></button></a>
+                </div>
+        
+                <div class="items">
+                    <a href="#" >
+                        <div class="item box">
+                            <img src="./Assets/elec3.jpg" alt="">
+                            <p class="name" > Bluetooth Head Phones</p>
+                            <p class="atract">From 999</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item box">
+                            <img src="./Assets/elec1.jpg" alt="">
+                            <p class="name" > Bluetooth Head Phones</p>
+                            <p class="atract">From 999</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item box">
+                            <img src="./Assets/elec2.jpg" alt="">
+                            <p class="name" > Bluetooth Head Phones</p>
+                            <p class="atract">From 999</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item box">
+                            <img src="./Assets/elec4.jpg" alt="">
+                            <p class="name" > Bluetooth Head Phones</p>
+                            <p class="atract">From 999</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item box">
+                            <img src="./Assets/elec5.jpg" alt="">
+                            <p class="name" > Bluetooth Head Phones</p>
+                            <p class="atract">From 999</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item box">
+                            <img src="./Assets/elec6.jpg" alt="">
+                            <p class="name" > Bluetooth Head Phones</p>
+                            <p class="atract">From 999</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item box">
+                            <img src="./Assets/elec7.jpg" alt="">
+                            <p class="name" > Bluetooth Head Phones</p>
+                            <p class="atract">From 999</p>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+            <div id="list3" class="item-table">
+                <div class="head">
+                    <h2>Best of Electronics</h2>
+                    <a href="#"><button class=".more-items">></button></a>
+                </div>
+        
+                <div class="items">
+                    <a href="#" >
+                        <div class="item box">
+                            <img src="./Assets/elec3.jpg" alt="">
+                            <p class="name" > Bluetooth Head Phones</p>
+                            <p class="atract">From 999</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item box">
+                            <img src="./Assets/elec1.jpg" alt="">
+                            <p class="name" > Bluetooth Head Phones</p>
+                            <p class="atract">From 999</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item box">
+                            <img src="./Assets/elec2.jpg" alt="">
+                            <p class="name" > Bluetooth Head Phones</p>
+                            <p class="atract">From 999</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item box">
+                            <img src="./Assets/elec4.jpg" alt="">
+                            <p class="name" > Bluetooth Head Phones</p>
+                            <p class="atract">From 999</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item box">
+                            <img src="./Assets/elec5.jpg" alt="">
+                            <p class="name" > Bluetooth Head Phones</p>
+                            <p class="atract">From 999</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item box">
+                            <img src="./Assets/elec6.jpg" alt="">
+                            <p class="name" > Bluetooth Head Phones</p>
+                            <p class="atract">From 999</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item box">
+                            <img src="./Assets/elec7.jpg" alt="">
+                            <p class="name" > Bluetooth Head Phones</p>
+                            <p class="atract">From 999</p>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+    
+            <div class="vertical-list">
+                <div class="verticle-table t1">
+                    <div class="head">
+                        <h2>Best of Electronics</h2>
+                        <a href="#"><button class=".more-items">></button></a>
+                    </div>
+    
+                    <div class="items">
+                        <a href="#" >
+                            <div class="item box">
+                                <img src="./Assets/elec7.jpg" alt="">
+                                <p class="name" > Bluetooth Head Phones</p>
+                                <p class="atract">From 999</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="item box">
+                                <img src="./Assets/elec6.jpg" alt="">
+                                <p class="name" > Bluetooth Head Phones</p>
+                                <p class="atract">From 999</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="item box">
+                                <img src="./Assets/elec5.jpg" alt="">
+                                <p class="name" > Bluetooth Head Phones</p>
+                                <p class="atract">From 999</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="item box">
+                                <img src="./Assets/elec3.jpg" alt="">
+                                <p class="name" > Bluetooth Head Phones</p>
+                                <p class="atract">From 999</p>
+                            </div>
+                        </a>
+                    </div>
+    
+                </div>
+                <div class="verticle-table t2">
+                    <div class="head">
+                        <h2>Best of Electronics</h2>
+                        <a href="#"><button class=".more-items">></button></a>
+                    </div>
+    
+                    <div class="items">
+                        <a href="#" >
+                            <div class="item box">
+                                <img src="./Assets/elec7.jpg" alt="">
+                                <p class="name" > Bluetooth Head Phones</p>
+                                <p class="atract">From 999</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="item box">
+                                <img src="./Assets/elec6.jpg" alt="">
+                                <p class="name" > Bluetooth Head Phones</p>
+                                <p class="atract">From 999</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="item box">
+                                <img src="./Assets/elec5.jpg" alt="">
+                                <p class="name" > Bluetooth Head Phones</p>
+                                <p class="atract">From 999</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="item box">
+                                <img src="./Assets/elec3.jpg" alt="">
+                                <p class="name" > Bluetooth Head Phones</p>
+                                <p class="atract">From 999</p>
+                            </div>
+                        </a>
+                    </div>
+    
+                </div>
+                <div class="verticle-table t3">
+                    <div class="head">
+                        <h2>Best of Electronics</h2>
+                        <a href="#"><button class=".more-items">></button></a>
+                    </div>
+    
+                    <div class="items">
+                        <a href="#" >
+                            <div class="item box">
+                                <img src="./Assets/elec7.jpg" alt="">
+                                <p class="name" > Bluetooth Head Phones</p>
+                                <p class="atract">From 999</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="item box">
+                                <img src="./Assets/elec6.jpg" alt="">
+                                <p class="name" > Bluetooth Head Phones</p>
+                                <p class="atract">From 999</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="item box">
+                                <img src="./Assets/elec5.jpg" alt="">
+                                <p class="name" > Bluetooth Head Phones</p>
+                                <p class="atract">From 999</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="item box">
+                                <img src="./Assets/elec3.jpg" alt="">
+                                <p class="name" > Bluetooth Head Phones</p>
+                                <p class="atract">From 999</p>
+                            </div>
+                        </a>
+                    </div>
+    
+                </div>
+                <div class="verticle-table t4">
+                    <div class="head">
+                        <h2>Best of Electronics</h2>
+                        <a href="#"><button class=".more-items">></button></a>
+                    </div>
+    
+                    <div class="items">
+                        <a href="#" >
+                            <div class="item box">
+                                <img src="./Assets/elec7.jpg" alt="">
+                                <p class="name" > Bluetooth Head Phones</p>
+                                <p class="atract">From 999</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="item box">
+                                <img src="./Assets/elec6.jpg" alt="">
+                                <p class="name" > Bluetooth Head Phones</p>
+                                <p class="atract">From 999</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="item box">
+                                <img src="./Assets/elec5.jpg" alt="">
+                                <p class="name" > Bluetooth Head Phones</p>
+                                <p class="atract">From 999</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="item box">
+                                <img src="./Assets/elec3.jpg" alt="">
+                                <p class="name" > Bluetooth Head Phones</p>
+                                <p class="atract">From 999</p>
+                            </div>
+                        </a>
+                    </div>
+    
+                </div>
+                <div class="verticle-table t5">
+                    <div class="head">
+                        <h2>Best of Electronics</h2>
+                        <a href="#"><button class=".more-items">></button></a>
+                    </div>
+    
+                    <div class="items">
+                        <a href="#" >
+                            <div class="item box">
+                                <img src="./Assets/elec7.jpg" alt="">
+                                <p class="name" > Bluetooth Head Phones</p>
+                                <p class="atract">From 999</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="item box">
+                                <img src="./Assets/elec6.jpg" alt="">
+                                <p class="name" > Bluetooth Head Phones</p>
+                                <p class="atract">From 999</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="item box">
+                                <img src="./Assets/elec5.jpg" alt="">
+                                <p class="name" > Bluetooth Head Phones</p>
+                                <p class="atract">From 999</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="item box">
+                                <img src="./Assets/elec3.jpg" alt="">
+                                <p class="name" > Bluetooth Head Phones</p>
+                                <p class="atract">From 999</p>
+                            </div>
+                        </a>
+                    </div>
+    
+                </div>
+                <div class="verticle-table t6">
+                    <div class="head">
+                        <h2>Best of Electronics</h2>
+                        <a href="#"><button class=".more-items">></button></a>
+                    </div>
+    
+                    <div class="items">
+                        <a href="#" >
+                            <div class="item box">
+                                <img src="./Assets/elec7.jpg" alt="">
+                                <p class="name" > Bluetooth Head Phones</p>
+                                <p class="atract">From 999</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="item box">
+                                <img src="./Assets/elec6.jpg" alt="">
+                                <p class="name" > Bluetooth Head Phones</p>
+                                <p class="atract">From 999</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="item box">
+                                <img src="./Assets/elec5.jpg" alt="">
+                                <p class="name" > Bluetooth Head Phones</p>
+                                <p class="atract">From 999</p>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="item box">
+                                <img src="./Assets/elec3.jpg" alt="">
+                                <p class="name" > Bluetooth Head Phones</p>
+                                <p class="atract">From 999</p>
+                            </div>
+                        </a>
+                    </div>
+    
+                </div>
+            </div>
+    
+        </main>
+
+        <footer>
+            <div class="top">
+                <div class="list about">
+                    <p class="name">About</p>
+                    <ul class="items">
+                        <a href="#"> <li class="item">Contact Us</li> </a>
+                        <a href="#"> <li class="item">About Us</li> </a>
+                        <a href="#"> <li class="item">Career</li> </a>
+                        <a href="#"> <li class="item">Flipcart Stories</li> </a>
+                        <a href="#"> <li class="item">Press</li> </a>
+                        <a href="#"> <li class="item">Corporate Information</li> </a>
+                    </ul>
+                </div>
+                <div class="list group-cmp">
+                    <p class="name">Group Companies</p>
+                    <ul class="items">
+                        <a href="#"> <li class="item">Contact Us</li> </a>
+                        <a href="#"> <li class="item">About Us</li> </a>
+                        <a href="#"> <li class="item">Career</li> </a>
+                        <a href="#"> <li class="item">Flipcart Stories</li> </a>
+                        <a href="#"> <li class="item">Press</li> </a>
+                        <a href="#"> <li class="item">Corporate Information</li> </a>
+                    </ul>
+                </div>
+                <div class="list help">
+                    <p class="name">Help</p>
+                    <ul class="items">
+                        <a href="#"> <li class="item">Contact Us</li> </a>
+                        <a href="#"> <li class="item">About Us</li> </a>
+                        <a href="#"> <li class="item">Career</li> </a>
+                        <a href="#"> <li class="item">Flipcart Stories</li> </a>
+                        <a href="#"> <li class="item">Press</li> </a>
+                        <a href="#"> <li class="item">Corporate Information</li> </a>
+                    </ul>
+                </div>
+                <div class="list cusr-policy">
+                    <p class="name">Customer Policy</p>
+                    <ul class="items">
+                        <a href="#"> <li class="item">Contact Us</li> </a>
+                        <a href="#"> <li class="item">About Us</li> </a>
+                        <a href="#"> <li class="item">Career</li> </a>
+                        <a href="#"> <li class="item">Flipcart Stories</li> </a>
+                        <a href="#"> <li class="item">Press</li> </a>
+                        <a href="#"> <li class="item">Corporate Information</li> </a>
+                    </ul>
+                </div>
+                <div class="list social">
+                    <div class="up">
+                        <div class="name">Mail Us</div>
+                        <p class="add">
+                            Vaishnavi Summit, Ground Floor, 7th Main, 80 Feet Road, 3rd Block, Koramangala Industrial Layout, Bangalore KA IN 560034.
+                        </p>
+                    </div>
+                    <div class="down">
+                        <div class="name">Social:</div>
+                        <div class="sites">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="list address">
+                    <p class="name">Registered Address</p>
+                    <p class="add">
+                        Vaishnavi Summit, Ground Floor, 7th Main, 80 Feet Road, 3rd Block, Koramangala Industrial Layout, Bangalore KA IN 560034.
+                    </p>
+                    <p class="phone">Telephone: 9953661145</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <p><span class="material-symbols-outlined">storefront</span>Become a Seller</p>
+                <p><span class="material-symbols-outlined">star</span>Advertise</p>
+                <p><span class="material-symbols-outlined">featured_seasonal_and_gifts</span>Gift Cards</p>
+                <p><span class="material-symbols-outlined">help</span>Help Center</p>
+                <p class="cpy"><span class="material-symbols-outlined">copyright</span>2007-2024 Flipkart</p>
+                <div class="cards">
+                    <img src="./Assets/Credit_Card_Icons.svg" alt="">
+                    <img src="./Assets/Credit_Card_Icons.svg" alt="">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
